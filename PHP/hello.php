@@ -1,8 +1,6 @@
-/*
- * @Date: 2021-04-07 23:11:22
- * @LastEditTime: 2021-05-18 21:38:34
- * @Description: 
- */
+<?php
+$sMd5 = md5('C1453E6F6D166659DC3087DD0C540EB7');
 
+$mod = hexdec(substr($sMd5, -4)) % 100;
 
- 
+echo $mod;
